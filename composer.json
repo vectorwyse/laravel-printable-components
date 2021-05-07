@@ -1,0 +1,32 @@
+{
+  "name": "vectorwyse/laravel-printable-components",
+  "description": "A set of Blade components for creating document previews with page breaks that translate perfectly to paper or PDF.",
+  "keywords": [
+    "vectorwyse",
+    "blade-components",
+    "laravel",
+    "tailwindcss"
+  ],
+  "homepage": "https://github.com/vectorwyse/laravel-printable-components",
+  "license": "MIT",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Anthony Chan",
+      "email": "anthony@vectorwyse.com"
+    }
+  ],
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "Vectorwyse\\LaravelPrintableComponents\\": "src"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Vectorwyse\\LaravelPrintableComponents\\LaravelPrintableComponentsServiceProvider"
+      ]
+    }
+  }
+}
