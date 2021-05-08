@@ -14,7 +14,7 @@ A set of Blade components for creating document previews with automatic page bre
 composer require vectorwyse/laravel-printable-components
 ```
 
-## Usage/Examples
+## Usage
 
 The package provides you with two components designed to be used together:
 
@@ -42,11 +42,11 @@ You can add as many pages as you like and the content will stay within their res
 
 NOTE: You should ensure that your print settings match your document settings. e.g. If your document component is set to "letter" and "portrait" then your browser's print settings should also be set to "letter" and "portrait."
 
-### `<x-printable.document>`
+## Document `<x-printable.document>`
 
 This component renders a "Print Preview" style container, and should come right after the `<body>` tag.
 
-#### Paper size
+### Paper size
 
 You can specify the paper size by passing the `size` parameter:
 
@@ -60,7 +60,7 @@ You can specify the paper size by passing the `size` parameter:
   </x-printable.document>
 ```
 
-#### Paper orientation
+### Paper orientation
 
 You can specify the paper orientation by passing the `orientation` parameter:
 
@@ -74,7 +74,7 @@ You can specify the paper orientation by passing the `orientation` parameter:
   </x-printable.document>
 ```
 
-#### Styling
+### Styling
 
 By default, the following tailwind classes are applied:
 
@@ -90,7 +90,7 @@ You are free to adjust this by adding your own classes:
   </x-printable.document>
 ```
 
-### `<x-printable.page>`
+## Page `<x-printable.page>`
 
 This component renders a `section` element with the proper height & width set to simulate a page.
 Any content you place within this component will within its own page when printing or saving to PDF.
@@ -98,7 +98,7 @@ Any content you place within this component will within its own page when printi
 All pages within a document inherit the same size and orientation settings.
 
 
-#### Styling
+### Styling
 
 By default the following tailwind classes are applied:
 
