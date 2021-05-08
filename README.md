@@ -5,10 +5,18 @@ A set of Blade components for creating document previews with automatic page bre
 
 ![](screenshot.gif)
 
+If you've ever tried to replicate a "print preview" of some document or data in HTML, you know how frustrating it can be to ensure things will print consistently on one page.
+
+This package aims to take the guesswork out of setting the right dimensions for each page in your document so you can focus on just laying out your content.
+
+What you get is your content laid out across various pages which when printed or saved to PDF from your browser will result in a document identical to your preview. Even better, when paired with something like [Browsershot](https://github.com/spatie/browsershot), you can craft intricate, professional looking layouts using the power of Flexbox and snapshot them into beautiful looking PDFs.
+
 ## Requirements
 
 * Laravel 8.x
 * Tailwind CSS 2.x
+
+Supported browsers: Chrome, Brave, Firefox
 
 ## Installation
 
