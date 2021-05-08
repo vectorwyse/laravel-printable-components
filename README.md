@@ -3,7 +3,7 @@
 
 A set of Blade components for creating document previews with automatic page breaks that translate perfectly to paper or PDF.
 
-![](screenshot.png)
+![](screenshot.gif)
 
 ## Requirements
 
