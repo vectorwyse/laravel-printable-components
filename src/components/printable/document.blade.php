@@ -12,7 +12,7 @@
   $height = ($orientation == 'portrait' ? $dimensions[$size][1] : $dimensions[$size][0]);
 @endphp
 
-<div class="flex justify-center bg-gray-400">
+<div>
   <style>
     #printable-container > section {
       width: {{ $width }};
@@ -40,7 +40,7 @@
 
   <div
     id="printable-container"
-    class="flex flex-col py-6 space-y-6"
+    {{ $attributes->merge(['class' => 'flex flex-col items-center bg-gray-400 py-6 space-y-6']) }}
     >
 
     {{ $slot }}
