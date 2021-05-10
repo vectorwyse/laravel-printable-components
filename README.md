@@ -1,7 +1,7 @@
 
 # Laravel Printable Components
 
-A set of Blade components for creating document previews with automatic page breaks that translate perfectly to paper or PDF.
+A set of Blade components for creating document previews that print perfectly to paper or PDF.
 
 ![](screenshot.gif)
 
