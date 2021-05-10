@@ -6,6 +6,7 @@
   $dimensions = [
     'letter' => ['816px', '1056px'],
     'legal' => ['816px', '1344px'],
+    'a4' => ['794px', '1123px'],
   ];
 
   $width = ($orientation == 'portrait' ? $dimensions[$size][0] : $dimensions[$size][1]);
@@ -19,12 +20,11 @@
       height: {{ $height }};
     }
 
-    @page {
-      size: {{ $size }} {{ $orientation }};
-      margin: 0;
-    }
-
     @media print {
+      @page {
+        size: {{ $size }} {{ $orientation }};
+        margin: 0;
+       }
       /* Reset all screen preview styles */
       #printable-container {
         padding: 0;
