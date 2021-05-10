@@ -69,7 +69,7 @@ You can specify the paper size by passing the `size` parameter:
 
   </x-printable.document>
 ```
-
+Currently supported sizes are: `letter|legal|a4`.
 ### Paper orientation
 
 You can specify the paper orientation by passing the `orientation` parameter:
@@ -84,6 +84,7 @@ You can specify the paper orientation by passing the `orientation` parameter:
   </x-printable.document>
 ```
 
+Supported orientations are: `portrait|landscape`.
 ### Styling
 
 By default, the following tailwind classes are applied:
